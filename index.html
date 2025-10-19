@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System - Java Project</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #2980b9, #3498db); color: white; text-align: center; padding: 50px 20px; }
+        .header h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .header p { font-size: 1.3rem; opacity: 0.9; }
+        .content { padding: 40px; }
+        .demo-box { background: #f8f9fa; border: 2px dashed #3498db; border-radius: 10px; padding: 40px; text-align: center; margin: 30px 0; }
+        .demo-box h2 { color: #2980b9; margin-bottom: 15px; }
+        .demo-text { font-size: 1.1rem; color: #666; margin-bottom: 20px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .feature-card { background: #f8f9fa; padding: 25px; border-radius: 10px; border-left: 5px solid #3498db; transition: transform 0.3s ease; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card h3 { color: #2980b9; margin-bottom: 10px; font-size: 1.3rem; }
+        .tech-stack { background: #2c3e50; color: white; padding: 30px; border-radius: 10px; margin: 30px 0; }
+        .tech-stack h3 { margin-bottom: 15px; color: #3498db; }
+        .buttons { text-align: center; margin: 40px 0; }
+        .btn { display: inline-block; padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; }
+        .btn-primary { background: #3498db; color: white; }
+        .btn-primary:hover { background: #2980b9; transform: translateY(-2px); }
+        .btn-secondary { background: #27ae60; color: white; }
+        .btn-secondary:hover { background: #229954; transform: translateY(-2px); }
+        .instructions { background: #e8f6f3; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #27ae60; }
+        .footer { background: #2c3e50; color: white; text-align: center; padding: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏨 Grand Palace Hotel</h1>
+            <p>Professional Hotel Reservation Management System</p>
+        </div>
+
+        <div class="content">
+            <div class="demo-box">
+                <h2>📱 Desktop Application Demo</h2>
+                <p class="demo-text">This is a <strong>Java Swing Desktop Application</strong> that runs locally on your computer.</p>
+                <p>Since it's not a web application, it cannot run directly in browsers, but you can see the features below!</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🎯 Smart Booking System</h3>
+                    <p>Complete room reservation with categorization: Standard, Deluxe, Super Deluxe, Suite, and Presidential rooms.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📋 Reservation Management</h3>
+                    <p>View booking history, manage reservations, and track booking status with detailed information display.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Input Validation</h3>
+                    <p>Comprehensive form validation with email format, age range, phone number, and mandatory field checks.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Modern Interface</h3>
+                    <p>Professional Java Swing GUI with custom graphics, tabbed navigation, and responsive design.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔍 Room Search</h3>
+                    <p>Advanced room search functionality by category with real-time availability checking.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Dashboard View</h3>
+                    <p>Complete room catalog with pricing, features, and availability status in a professional table format.</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3>🛠️ Technology Stack</h3>
+                <p><strong>Programming Language:</strong> Java 17+</p>
+                <p><strong>GUI Framework:</strong> Java Swing</p>
+                <p><strong>Architecture:</strong> Object-Oriented Programming (OOP)</p>
+                <p><strong>Design Pattern:</strong> Model-View-Controller (MVC)</p>
+                <p><strong>IDE:</strong> IntelliJ IDEA</p>
+                <p><strong>Data Storage:</strong> File I/O System</p>
+            </div>
+
+            <div class="instructions">
+                <h3>📥 How to Download & Run</h3>
+                <ol>
+                    <li><strong>Download:</strong> Click the "Download Source Code" button below</li>
+                    <li><strong>Extract:</strong> Unzip the downloaded file to your computer</li>
+                    <li><strong>Open:</strong> Import the project in your Java IDE (IntelliJ IDEA/Eclipse)</li>
+                    <li><strong>Run:</strong> Execute the HotelManagementUI.java file</li>
+                    <li><strong>Enjoy:</strong> Use the complete hotel reservation system!</li>
+                </ol>
+                <p><strong>System Requirements:</strong> Java 17 or higher installed on your system</p>
+            </div>
+
+            <div class="buttons">
+                <a href="https://github.com/manishcoder92/CodeAlpha_Hotel-Reservation-System/archive/refs/heads/main.zip" class="btn btn-primary">📥 Download Source Code</a>
+                <a href="https://github.com/manishcoder92/CodeAlpha_Hotel-Reservation-System" class="btn btn-secondary">👨‍💻 View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💼 <strong>CodeAlpha Internship Project</strong> | Developed by Manish Kumar</p>
+            <p>🎓 BCA AI-ML Student, Parul University, Gujarat</p>
+        </div>
+    </div>
+</body>
+</html>
